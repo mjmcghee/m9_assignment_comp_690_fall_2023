@@ -1,4 +1,7 @@
-import {default as employees} from '/modules/init.js'
+import {default as init} from './init.js'
+
+init()
+console.log(data)
 
 // CREATE AN ARRAY OF EMPLOYEES
 // let arrEmployees = [
@@ -15,7 +18,7 @@ let empCount    = document.querySelector('#empCount')
 
 // BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
 // buildGrid(arrEmployees)
-buildGrid()
+// buildGrid()
 
 // DELETE EMPLOYEE
 empTable.addEventListener('click', (e) => {
@@ -32,6 +35,7 @@ empTable.addEventListener('click', (e) => {
 
 // BUILD THE EMPLOYEES GRID
 function buildGrid(arrEmployees) {
+    // init()
     // REMOVE THE EXISTING SET OF ROWS BY REMOVING THE ENTIRE TBODY SECTION
     empTable.lastElementChild.remove()
     // REBUILD THE TBODY FROM SCRATCH
